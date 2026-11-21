@@ -1,8 +1,8 @@
-﻿class Keycode < Formula
+class Keycode < Formula
   desc "Free, local-first, bring-your-own-key coding agent"
   homepage "https://github.com/pbcardosi/keycode"
-  url "https://registry.npmjs.org/keycode-ai/-/keycode-ai-0.1.2.tgz"
-  sha256 "04d5a24572294352524dbcfaffb7a32a8150afa44e302447d41ff7d921df550b"
+  url "https://registry.npmjs.org/keycode-ai/-/keycode-ai-0.1.3.tgz"
+  sha256 "c0d46f45a0aac58f0a7e133644f2fd746c6e50fb11e481b145b42121298ae1dc"
   license "Apache-2.0"
 
   depends_on "node"
@@ -13,6 +13,6 @@
   end
 
   test do
-    assert_match "0.1.2", shell_output("#{bin}/keycode --version")
+    assert_match "0.1.3", shell_output("#{bin}/keycode --version")
   end
 end
